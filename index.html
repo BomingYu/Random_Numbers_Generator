@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Random Number Generate<br />For You</h1>
+    </header>
+    <section>
+      <nav>
+        <div><h2>Dashboard</h2></div>
+        <div>
+          <div>
+            <label class="label">How Many Number(s) Do You Need</label><br />
+            <input type="text" value="0" class="numberText" id="numberText" />
+          </div>
+          <div>
+            <label class="label">The Range Of The Numbers</label><br />
+            <input type="text" value="0" class="rangeMin" id="rangeMin"/><label> TO </label
+            ><br />
+            <input type="text" value="0" class="rangeMax" id="rangeMax"/><br />
+          </div>
+          <div>
+            <button class="button" onclick="startRun()">Run!</button
+            ><button class="button" onclick="stopRun()">Stop</button>
+          </div>
+        </div>
+      </nav>
+      <article class="resultDisplay" id="resultDisplay">
+
+
+      </article>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
