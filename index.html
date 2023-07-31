@@ -4,36 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Number Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;700&family=REM:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@500&family=REM:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <h1>Random Number Generate<br />For You</h1>
     </header>
     <section>
-      <nav>
-        <div><h2>Dashboard</h2></div>
-        <div>
-          <div>
-            <label class="label">How Many Number(s) Do You Need</label><br />
+      <div class="toolAera">
+        <div><h2>Presetting</h2></div>
+        <div class="mainControlDiv">
+          <div class="numOfNumDiv">
+            <label class="label">How Many Number(s) Do You Need : </label><br />
             <input type="text" value="0" class="numberText" id="numberText" />
           </div>
-          <div>
-            <label class="label">The Range Of The Numbers</label><br />
-            <input type="text" value="0" class="rangeMin" id="rangeMin"/><label> TO </label
-            ><br />
-            <input type="text" value="0" class="rangeMax" id="rangeMax"/><br />
+          <div class="rangeOfNum">
+            <label class="label">The Range Of The Numbers : </label><br />
+            <input
+              type="text"
+              value="0"
+              class="rangeMin"
+              id="rangeMin"
+            /><label> TO </label><br />
+            <input type="text" value="0" class="rangeMax" id="rangeMax" /><br />
           </div>
-          <div>
-            <button class="button" onclick="startRun()">Run!</button
-            ><button class="button" onclick="stopRun()">Stop</button>
+          <div class="buttonDiv">
+            <button class="button" id="startButton" onclick="startRun()">
+              Run!</button
+            ><button class="button" id="stopButton" onclick="stopRun()">
+              Stop
+            </button>
           </div>
+          
         </div>
-      </nav>
-      <article class="resultDisplay" id="resultDisplay">
-
-
-      </article>
+        <article class="resultDisplay" id="resultDisplay"></article>
+      </div>
+      
     </section>
   </body>
   <script src="script.js"></script>
