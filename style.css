@@ -48,7 +48,7 @@ h3{
     flex-direction: column;
 
     position: sticky;
-    top: 5px;
+    top: 0px;
 }
 
 .numOfNumDiv, .rangeOfNum{
